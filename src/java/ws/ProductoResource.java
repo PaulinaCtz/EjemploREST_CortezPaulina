@@ -116,6 +116,6 @@ public class ProductoResource {
                 return Response.status(Response.Status.OK).entity("Se ha eliminado el producto con el Id " + (i+1)).build();
             }
         }
-        return Response.status(Response.Status.NOT_FOUND).build();
+        return Response.status(Response.Status.NOT_FOUND).entity("No se ha encontrado el recurso a eliminar.").build();
     }
 }
